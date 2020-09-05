@@ -7,6 +7,13 @@
       "direction": "in",
       "path": "samples-workitems/{name}",
       "connection": "AzureWebJobsStorage"
+    },
+    {
+      "type": "blob",
+      "direction": "out",
+      "name": "EEOutputBlob",
+      "path": "outcontainer/{rand-guid}",
+      "connection": "AzureWebJobsStorage"
     }
   ]
 }

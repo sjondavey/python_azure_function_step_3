@@ -1,0 +1,6 @@
+{
+	"forwards":[
+				{'isin': 'isin_1', 'long_short': 'long', 'volume': 1000, 'strike': 16.4, 'ttm': 1.52},
+				{'isin': 'isin_2', 'long_short': 'short', 'volume': 500, 'strike': 12.3, 'ttm': 0.98}
+			   ]
+}
