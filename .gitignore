@@ -1,3 +1,8 @@
+# Azurite for testing Azure Storage functionality locally
+__azurite_db_*
+__blobstorage__
+__queuestorage__
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
