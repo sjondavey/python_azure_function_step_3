@@ -29,5 +29,5 @@ The final step is to install the `Azurite` VSCode Extension for local developmen
   }
 }
 ```
-**Note: Using Azurite in VSCode** Despite the fact that I only use Blobs here (and not Queues), I need to start the Azurite Blob Service **and** the Azurite Queue Service. If I do not start the queue service, when I try to debug my function, it fails with an error similar to `"microsoft.windowsazure.storage: no connection could be made because the target machine actively refused it"`.
+**Note: Using Azurite in VSCode** Despite the fact that I only use Blobs here (and not Queues), I need to start the Azurite Blob Service **and** the Azurite Queue Service. If I do not start the queue service, when I try to debug my function, it fails with an error similar to `"microsoft.windowsazure.storage: no connection could be made because the target machine actively refused it"`. The blob trigger uses a queue behind the scenes. The binding puts changes in the storage account into a queue, and functions are triggered from that queue. Some information on this in the [documents](https://docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-storage-blob-trigger?tabs=javascript#concurrency-and-memory-usage)
 
